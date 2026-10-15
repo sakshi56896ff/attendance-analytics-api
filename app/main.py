@@ -1661,11 +1661,11 @@ def explain_endpoint(
             },
             verbosity="executionStats",
         )
-        return Response(
-    content=dumps({
-        "endpoint": endpoint,
-        "collection": collection,
-        "explain": explain,
-    }),
-    media_type="application/json",
-)
+    return Response(
+        content=dumps({
+            "endpoint": endpoint,
+            "collection": collection,
+            "explain": explain,
+        }),
+        media_type="application/json",
+    )
